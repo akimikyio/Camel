@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cewxot706v65"
-path="res://.godot/imported/Decorations (32x32).png-59cfe891ffcb582dc7d6568d4647174c.ctex"
+uid="uid://6fie5k05te1y"
+path="res://.godot/imported/Hit (78x58).png-02f708ed5634d6823dc7d69d5c9ae33e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/terrain/Decorations (32x32).png"
-dest_files=["res://.godot/imported/Decorations (32x32).png-59cfe891ffcb582dc7d6568d4647174c.ctex"]
+source_file="res://assets/sprites/character_test/Hit (78x58).png"
+dest_files=["res://.godot/imported/Hit (78x58).png-02f708ed5634d6823dc7d69d5c9ae33e.ctex"]
 
 [params]
 
