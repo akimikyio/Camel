@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://4sf0hy3cv03x"]
+
+[ext_resource type="PackedScene" uid="uid://c6wbdh7pakhyp" path="res://elements/Camel/camel.tscn" id="1_rst8b"]
+[ext_resource type="PackedScene" uid="uid://b2p5mcphg47ds" path="res://elements/GameView/game_view.tscn" id="2_6ca3r"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Camel" parent="." instance=ExtResource("1_rst8b")]
+
+[node name="GameView" parent="." instance=ExtResource("2_6ca3r")]
