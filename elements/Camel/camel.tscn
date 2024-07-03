@@ -7,7 +7,6 @@
 radius = 3.0
 
 [node name="Camel" type="CharacterBody2D"]
-scale = Vector2(5, 5)
 collision_mask = 15
 script = ExtResource("1_tb4se")
 
