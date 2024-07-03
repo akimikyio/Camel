@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6wbdh7pakhyp"]
+
+[ext_resource type="Script" path="res://elements/Camel/camel.gd" id="1_tb4se"]
+[ext_resource type="Texture2D" uid="uid://dooylpi41a4sf" path="res://elements/Camel/base.png" id="1_vkxbt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0pil3"]
+radius = 3.0
+
+[node name="Camel" type="CharacterBody2D"]
+scale = Vector2(5, 5)
+collision_mask = 15
+script = ExtResource("1_tb4se")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -1)
+texture = ExtResource("1_vkxbt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_0pil3")
