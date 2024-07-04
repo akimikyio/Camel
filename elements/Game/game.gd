@@ -4,7 +4,7 @@ var plant_bullet_scene: PackedScene = preload("res://elements/Enemies/Plant/plan
 
 func _ready():
 	for plant in get_tree().get_nodes_in_group("Plants"):
-		plant.connect("plant_bullet",  plant_bullet_create)
+		plant.connect("plant_bullet", plant_bullet_create)
 	for enemy in get_tree().get_nodes_in_group("Enemies"):
 		enemy.get_node("HealthBar").max_value = enemy.max_health
 
