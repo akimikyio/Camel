@@ -1,11 +1,17 @@
-extends CharacterBody2D
+extends Enemy
 
 const SPEED: float = 100.0
 const JUMP_VELOCITY: float = -200.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func _ready():
+	max_health = 100
+	health = 100
+
 func _physics_process(delta: float):
+	
+	Globals.player_position = global_position
 	
 	if not is_on_floor():
 		velocity.y += gravity * delta 	# affecting character by gravity

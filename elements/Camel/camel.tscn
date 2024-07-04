@@ -67,18 +67,18 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0pil3"]
-radius = 3.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_u6t80"]
 
 [node name="Camel" type="CharacterBody2D"]
-collision_mask = 15
+collision_mask = 62
 script = ExtResource("1_tb4se")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(7, -3)
 sprite_frames = SubResource("SpriteFrames_g4hu2")
 animation = &"run"
 autoplay = "run"
-frame_progress = 0.307364
+frame_progress = 0.950047
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_0pil3")
+shape = SubResource("CircleShape2D_u6t80")

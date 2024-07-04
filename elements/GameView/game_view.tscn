@@ -13,10 +13,11 @@ normal = Vector2(-1, 0)
 script = ExtResource("1_0b06o")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
 
 [node name="LeftBorder" type="AnimatableBody2D" parent="."]
 position = Vector2(-640, 0)
-collision_layer = 4
+collision_layer = 32
 sync_to_physics = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftBorder"]
@@ -24,7 +25,7 @@ shape = SubResource("WorldBoundaryShape2D_1lvu2")
 
 [node name="RightBorder" type="AnimatableBody2D" parent="."]
 position = Vector2(640, 0)
-collision_layer = 4
+collision_layer = 32
 sync_to_physics = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RightBorder"]
