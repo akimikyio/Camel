@@ -9,7 +9,7 @@ func _ready():
 		enemy.get_node("HealthBar").max_value = enemy.max_health
 
 func create_plant_bullet(pos, direction):
-	var bullet = plant_bullet_scene.instantiate() as Area2D
+	var bullet = plant_bullet_scene.instantiate()
 	bullet.position = pos
 	bullet.direction = direction
 	$Projectiles.add_child(bullet)

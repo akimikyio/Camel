@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
-var speed: float = 100.0
+
 const JUMP_VELOCITY: float = -200.0
 
+var speed: float = 100.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_attacking: bool = false
 var can_melee_attack: bool = true
