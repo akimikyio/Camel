@@ -31,3 +31,5 @@ sync_to_physics = false
 shape = SubResource("WorldBoundaryShape2D_7sfav")
 
 [node name="Camel" parent="." instance=ExtResource("2_16tvt")]
+
+[connection signal="player_death" from="Camel" to="." method="_on_camel_player_death"]

@@ -1526,8 +1526,6 @@ sources/0 = SubResource("TileSetAtlasSource_lline")
 [node name="Game" type="Node2D"]
 script = ExtResource("1_omtfk")
 
-[node name="GameView" parent="." instance=ExtResource("2_6ca3r")]
-
 [node name="Level" type="Node2D" parent="."]
 position = Vector2(-12, -130)
 
@@ -1581,13 +1579,29 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("4_ycq6m")
 centered = false
 
-[node name="Plant" parent="Level" instance=ExtResource("6_iunif")]
-position = Vector2(314, 187)
-
-[node name="Plant2" parent="Level" instance=ExtResource("6_iunif")]
-position = Vector2(165, 202)
-
-[node name="Plant3" parent="Level" instance=ExtResource("6_iunif")]
-position = Vector2(119, 186)
-
 [node name="Projectiles" type="Node2D" parent="."]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Plant3" parent="Enemies" instance=ExtResource("6_iunif")]
+position = Vector2(113, 65)
+
+[node name="Plant4" parent="Enemies" instance=ExtResource("6_iunif")]
+position = Vector2(170, -31)
+rotation = -1.57079
+
+[node name="Plant5" parent="Enemies" instance=ExtResource("6_iunif")]
+position = Vector2(120, -30)
+rotation = -1.57079
+health = 10
+
+[node name="Plant6" parent="Enemies" instance=ExtResource("6_iunif")]
+position = Vector2(248, 74)
+
+[node name="Plant7" parent="Enemies" instance=ExtResource("6_iunif")]
+position = Vector2(342, 65)
+
+[node name="Plant8" parent="Enemies" instance=ExtResource("6_iunif")]
+position = Vector2(602, 70)
+
+[node name="GameView" parent="." instance=ExtResource("2_6ca3r")]
