@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://0qoqqfixmabb"]
 
-[ext_resource type="Script" path="res://elements/Enemies/enemy.gd" id="1_o47tt"]
+[ext_resource type="Script" path="res://elements/enemies/enemy.gd" id="1_o47tt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4vqat"]
 bg_color = Color(0, 0, 0, 0.501961)

@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Camel"
-run/main_scene="res://elements/Game/game.tscn"
+run/main_scene="res://elements/game/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*res://globals/globals.gd"
+Globals="*res://core/globals/globals.gd"
 
 [display]
 

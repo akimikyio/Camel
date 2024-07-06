@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://d6qrcj8y2jp"]
 
-[ext_resource type="Script" path="res://elements/Enemies/Plant/plant_bullet.gd" id="1_6a3rn"]
+[ext_resource type="Script" path="res://elements/enemies/plant/plant_bullet.gd" id="1_6a3rn"]
 [ext_resource type="Texture2D" uid="uid://oxqtblgwfdmc" path="res://assets/sprites/enemies/plant/Bullet.png" id="2_wp1bh"]
-[ext_resource type="AudioStream" uid="uid://d12g3r3hcap5s" path="res://assets/sounds/Plant/bullet_death.mp3" id="3_gtxjo"]
+[ext_resource type="AudioStream" uid="uid://d12g3r3hcap5s" path="res://assets/sounds/plant/bullet_death.mp3" id="3_gtxjo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_od066"]
 radius = 5.0

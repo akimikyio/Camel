@@ -1,11 +1,11 @@
 [gd_scene load_steps=15 format=3 uid="uid://c6wbdh7pakhyp"]
 
-[ext_resource type="Script" path="res://elements/Camel/camel.gd" id="1_tb4se"]
+[ext_resource type="Script" path="res://elements/camel/camel.gd" id="1_tb4se"]
 [ext_resource type="Texture2D" uid="uid://cyv4eiiobisyt" path="res://assets/sprites/character_test/Run (78x58).png" id="2_8lx51"]
 [ext_resource type="Texture2D" uid="uid://b0s8x4yr2nscs" path="res://assets/sprites/character_test/Dead (78x58).png" id="2_e55uq"]
 [ext_resource type="Texture2D" uid="uid://qtfpu2hghg13" path="res://assets/sprites/character_test/Attack (78x58).png" id="2_eutn0"]
-[ext_resource type="AudioStream" uid="uid://cggubadxs77wj" path="res://assets/sounds/Player/attack.mp3" id="4_oeiwp"]
-[ext_resource type="AudioStream" uid="uid://dfx2dhvytapjq" path="res://assets/sounds/Player/death.mp3" id="6_mh1a3"]
+[ext_resource type="AudioStream" uid="uid://cggubadxs77wj" path="res://assets/sounds/player/attack.mp3" id="4_oeiwp"]
+[ext_resource type="AudioStream" uid="uid://dfx2dhvytapjq" path="res://assets/sounds/player/death.mp3" id="6_mh1a3"]
 
 [sub_resource type="Animation" id="Animation_0wimt"]
 length = 0.001
@@ -270,6 +270,10 @@ value = 20.0
 show_percentage = false
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+position = Vector2(269, -36)
+current = true
 
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
 [connection signal="timeout" from="MeleeAttackTimer" to="." method="_on_melee_attack_timer_timeout"]

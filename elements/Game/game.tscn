@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=3 uid="uid://4sf0hy3cv03x"]
 
-[ext_resource type="Script" path="res://elements/Game/game.gd" id="1_omtfk"]
-[ext_resource type="PackedScene" uid="uid://b2p5mcphg47ds" path="res://elements/GameView/game_view.tscn" id="2_6ca3r"]
+[ext_resource type="Script" path="res://elements/game/game.gd" id="1_omtfk"]
+[ext_resource type="PackedScene" uid="uid://b2p5mcphg47ds" path="res://elements/game_view/game_view.tscn" id="2_6ca3r"]
 [ext_resource type="Texture2D" uid="uid://gy4jdbmwklrd" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-bg.png" id="3_23p6l"]
 [ext_resource type="Texture2D" uid="uid://srju4a62jiue" path="res://assets/sprites/terrain_test/Terrain (32x32).png" id="3_jap2x"]
 [ext_resource type="Texture2D" uid="uid://tjm6lxb6dqsi" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-foreground-trees.png" id="4_ycq6m"]
 [ext_resource type="Texture2D" uid="uid://cwwhim3e73v6s" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-montain-far.png" id="5_6s7wb"]
 [ext_resource type="Texture2D" uid="uid://ddw6hnctem0dg" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-mountains.png" id="5_w1bd2"]
-[ext_resource type="PackedScene" uid="uid://dqlwcp2q3swk0" path="res://elements/Enemies/Plant/plant.tscn" id="6_iunif"]
+[ext_resource type="PackedScene" uid="uid://dqlwcp2q3swk0" path="res://elements/enemies/plant/plant.tscn" id="6_iunif"]
 [ext_resource type="Texture2D" uid="uid://deyt6vwnk1c4b" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-trees.png" id="7_tv6o8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lline"]

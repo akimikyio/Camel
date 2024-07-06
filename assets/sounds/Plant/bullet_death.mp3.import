@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://d12g3r3hcap5s"
-path="res://.godot/imported/bullet_death.mp3-df222cb1078b43d8daa8416170be91bc.mp3str"
+path="res://.godot/imported/bullet_death.mp3-0538c4047cb618835cd9a40353972f75.mp3str"
 
 [deps]
 
-source_file="res://assets/sounds/Plant/bullet_death.mp3"
-dest_files=["res://.godot/imported/bullet_death.mp3-df222cb1078b43d8daa8416170be91bc.mp3str"]
+source_file="res://assets/sounds/plant/bullet_death.mp3"
+dest_files=["res://.godot/imported/bullet_death.mp3-0538c4047cb618835cd9a40353972f75.mp3str"]
 
 [params]
 

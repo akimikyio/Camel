@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6upujqtrjvn1"]
+
+[ext_resource type="Script" path="res://core/entity/entity.gd" id="1_vn0ag"]
+
+[node name="Entity" type="CharacterBody2D"]
+script = ExtResource("1_vn0ag")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

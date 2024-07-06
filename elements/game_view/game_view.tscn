@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b2p5mcphg47ds"]
 
-[ext_resource type="Script" path="res://elements/GameView/game_view.gd" id="1_0b06o"]
-[ext_resource type="PackedScene" uid="uid://c6wbdh7pakhyp" path="res://elements/Camel/camel.tscn" id="2_16tvt"]
+[ext_resource type="Script" path="res://elements/game_view/game_view.gd" id="1_0b06o"]
+[ext_resource type="PackedScene" uid="uid://c6wbdh7pakhyp" path="res://elements/camel/camel.tscn" id="2_16tvt"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1lvu2"]
 normal = Vector2(1, 0)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dooylpi41a4sf"
-path="res://.godot/imported/base.png-01c268eda771c1bb499e4c0646330e41.ctex"
+path="res://.godot/imported/base.png-20541fc5899e6767b03757f853b5024a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://elements/Camel/base.png"
-dest_files=["res://.godot/imported/base.png-01c268eda771c1bb499e4c0646330e41.ctex"]
+source_file="res://elements/camel/base.png"
+dest_files=["res://.godot/imported/base.png-20541fc5899e6767b03757f853b5024a.ctex"]
 
 [params]
 
