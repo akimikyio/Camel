@@ -10,7 +10,7 @@ func _ready():
 	init()
 
 func _process(_delta):
-	if not is_disabled:
+	if not is_stunned:
 		if $AttackArea.is_colliding():
 			$AnimationPlayer.play("attack")
 		else:

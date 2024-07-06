@@ -34,7 +34,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 # states variables
 var is_attacking: bool = false
-var is_disabled: bool = false
+var is_stunned: bool = false
 var is_alive: bool = true
 # TODO: Make FSM (Finite-State-Machine) instead of it
 
@@ -60,10 +60,10 @@ func death():
 		await $AnimationPlayer.animation_finished
 	queue_free()
 
-func hit(amount):
+func take_damage(amount):
 	health -= amount
-	if $AnimationPlayer.has_animation("hit"):
-		$AnimationPlayer.play("hit")
-		is_disabled = true
+	if $AnimationPlayer.has_animation("take_damage"):
+		$AnimationPlayer.play("take_damage")
+		is_stunned = true
 		await $AnimationPlayer.animation_finished
-		is_disabled = false
+		is_stunned = false

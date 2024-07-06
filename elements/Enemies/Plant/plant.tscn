@@ -324,8 +324,6 @@ _data = {
 position = Vector2(63, 40)
 scale = Vector2(1, 0.64)
 script = ExtResource("2_xsorl")
-max_health = 20
-health = 20
 
 [node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(4, 3)
@@ -333,7 +331,7 @@ shape = SubResource("RectangleShape2D_gki8q")
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_t6k4r")
-animation = &"hit"
+animation = &"idle"
 
 [node name="AnimationPlayer" parent="." index="2"]
 libraries = {

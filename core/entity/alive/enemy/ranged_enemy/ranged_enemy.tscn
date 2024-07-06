@@ -5,7 +5,5 @@
 
 [node name="RangedEnemy" instance=ExtResource("1_sjasp")]
 script = ExtResource("2_wgpvq")
-max_health = 0
-health = 0
 
 [node name="AttackRayCast" type="RayCast2D" parent="." index="5"]

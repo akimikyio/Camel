@@ -48,8 +48,8 @@ func _process(_delta):
 
 
 func _on_attack_area_body_entered(body):
-	if "hit" in body:
-		body.hit(melee_damage)
+	if "take_damage" in body:
+		body.take_damage(melee_damage)
 
 func _on_melee_attack_timer_timeout():
 	can_melee_attack = true
