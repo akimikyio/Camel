@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqbyuurjfiq64"]
+
+[ext_resource type="PackedScene" uid="uid://0qoqqfixmabb" path="res://core/entity/alive/enemy/enemy.tscn" id="1_2nhur"]
+[ext_resource type="Script" path="res://core/entity/alive/enemy/melee_enemy/melee_enemy.gd" id="2_4kfs6"]
+
+[node name="MeleeEnemy" instance=ExtResource("1_2nhur")]
+script = ExtResource("2_4kfs6")
+max_health = 0
+health = 0
+
+[node name="AttackArea" type="Area2D" parent="." index="5"]

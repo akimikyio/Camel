@@ -1,6 +1,5 @@
 extends Area2D
 
-
 const damage: int = 5
 const speed: float = 100.0
 var direction: Vector2 = Vector2.LEFT

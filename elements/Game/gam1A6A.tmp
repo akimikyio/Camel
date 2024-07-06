@@ -1,18 +1,18 @@
 [gd_scene load_steps=12 format=3 uid="uid://4sf0hy3cv03x"]
 
-[ext_resource type="Script" path="res://elements/game/game.gd" id="1_xl7f2"]
-[ext_resource type="Texture2D" uid="uid://srju4a62jiue" path="res://assets/sprites/terrain_test/Terrain (32x32).png" id="2_pbcx4"]
-[ext_resource type="Texture2D" uid="uid://gy4jdbmwklrd" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-bg.png" id="3_n8d11"]
-[ext_resource type="Texture2D" uid="uid://ddw6hnctem0dg" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-mountains.png" id="4_fpk0m"]
-[ext_resource type="Texture2D" uid="uid://cwwhim3e73v6s" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-montain-far.png" id="5_4xhe3"]
-[ext_resource type="Texture2D" uid="uid://deyt6vwnk1c4b" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-trees.png" id="6_u3ifq"]
-[ext_resource type="Texture2D" uid="uid://tjm6lxb6dqsi" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-foreground-trees.png" id="7_uhyi2"]
-[ext_resource type="PackedScene" uid="uid://dqlwcp2q3swk0" path="res://elements/enemies/plant/plant.tscn" id="8_427w4"]
-[ext_resource type="PackedScene" uid="uid://b2p5mcphg47ds" path="res://elements/game_view/game_view.tscn" id="9_7yvbo"]
+[ext_resource type="Script" path="res://elements/game/game.gd" id="1_omtfk"]
+[ext_resource type="PackedScene" uid="uid://b2p5mcphg47ds" path="res://elements/GameView/game_view.tscn" id="2_6ca3r"]
+[ext_resource type="Texture2D" uid="uid://gy4jdbmwklrd" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-bg.png" id="3_23p6l"]
+[ext_resource type="Texture2D" uid="uid://srju4a62jiue" path="res://assets/sprites/terrain_test/Terrain (32x32).png" id="3_jap2x"]
+[ext_resource type="Texture2D" uid="uid://tjm6lxb6dqsi" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-foreground-trees.png" id="4_ycq6m"]
+[ext_resource type="Texture2D" uid="uid://cwwhim3e73v6s" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-montain-far.png" id="5_6s7wb"]
+[ext_resource type="Texture2D" uid="uid://ddw6hnctem0dg" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-mountains.png" id="5_w1bd2"]
+[ext_resource type="PackedScene" uid="uid://dqlwcp2q3swk0" path="res://elements/Enemies/Plant/plant.tscn" id="6_iunif"]
+[ext_resource type="Texture2D" uid="uid://deyt6vwnk1c4b" path="res://assets/sprites/backgorund_test/layers/parallax-mountain-trees.png" id="7_tv6o8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lline"]
 resource_name = "Terrain"
-texture = ExtResource("2_pbcx4")
+texture = ExtResource("3_jap2x")
 2:2/0 = 0
 2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_0/angular_velocity = 0.0
@@ -1524,7 +1524,7 @@ physics_layer_0/collision_mask = 15
 sources/0 = SubResource("TileSetAtlasSource_lline")
 
 [node name="Game" type="Node2D"]
-script = ExtResource("1_xl7f2")
+script = ExtResource("1_omtfk")
 
 [node name="Level" type="Node2D" parent="."]
 position = Vector2(-12, -130)
@@ -1540,7 +1540,7 @@ transform = Transform2D(1, 0, 0, 1, 0, -50)
 
 [node name="Sky" type="Sprite2D" parent="Level/ParallaxBackground"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("3_n8d11")
+texture = ExtResource("3_23p6l")
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="Level/ParallaxBackground"]
@@ -1549,7 +1549,7 @@ motion_mirroring = Vector2(400, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Level/ParallaxBackground/ParallaxLayer4"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("4_fpk0m")
+texture = ExtResource("5_w1bd2")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Level/ParallaxBackground"]
@@ -1558,7 +1558,7 @@ motion_mirroring = Vector2(400, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Level/ParallaxBackground/ParallaxLayer2"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("5_4xhe3")
+texture = ExtResource("5_6s7wb")
 centered = false
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="Level/ParallaxBackground"]
@@ -1567,7 +1567,7 @@ motion_mirroring = Vector2(800, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Level/ParallaxBackground/ParallaxLayer5"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("6_u3ifq")
+texture = ExtResource("7_tv6o8")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Level/ParallaxBackground"]
@@ -1576,43 +1576,32 @@ motion_mirroring = Vector2(900, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Level/ParallaxBackground/ParallaxLayer3"]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("7_uhyi2")
+texture = ExtResource("4_ycq6m")
 centered = false
 
 [node name="Projectiles" type="Node2D" parent="."]
 
 [node name="Enemies" type="Node2D" parent="."]
 
-[node name="Plant3" parent="Enemies" instance=ExtResource("8_427w4")]
+[node name="Plant3" parent="Enemies" instance=ExtResource("6_iunif")]
 position = Vector2(113, 65)
-collision_layer = 2
-collision_mask = 24
 
-[node name="Plant4" parent="Enemies" instance=ExtResource("8_427w4")]
+[node name="Plant4" parent="Enemies" instance=ExtResource("6_iunif")]
 position = Vector2(170, -31)
 rotation = -1.57079
-collision_layer = 2
-collision_mask = 24
 
-[node name="Plant5" parent="Enemies" instance=ExtResource("8_427w4")]
+[node name="Plant5" parent="Enemies" instance=ExtResource("6_iunif")]
 position = Vector2(120, -30)
 rotation = -1.57079
-collision_layer = 2
-collision_mask = 24
+health = 10
 
-[node name="Plant6" parent="Enemies" instance=ExtResource("8_427w4")]
+[node name="Plant6" parent="Enemies" instance=ExtResource("6_iunif")]
 position = Vector2(248, 74)
-collision_layer = 2
-collision_mask = 24
 
-[node name="Plant7" parent="Enemies" instance=ExtResource("8_427w4")]
+[node name="Plant7" parent="Enemies" instance=ExtResource("6_iunif")]
 position = Vector2(342, 65)
-collision_layer = 2
-collision_mask = 24
 
-[node name="Plant8" parent="Enemies" instance=ExtResource("8_427w4")]
+[node name="Plant8" parent="Enemies" instance=ExtResource("6_iunif")]
 position = Vector2(602, 70)
-collision_layer = 2
-collision_mask = 24
 
-[node name="GameView" parent="." instance=ExtResource("9_7yvbo")]
+[node name="GameView" parent="." instance=ExtResource("2_6ca3r")]

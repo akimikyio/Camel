@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://clmmxl2tjivag"]
+
+[ext_resource type="PackedScene" uid="uid://0qoqqfixmabb" path="res://core/entity/alive/enemy/enemy.tscn" id="1_sjasp"]
+[ext_resource type="Script" path="res://core/entity/alive/enemy/ranged_enemy/ranged_enemy.gd" id="2_wgpvq"]
+
+[node name="RangedEnemy" instance=ExtResource("1_sjasp")]
+script = ExtResource("2_wgpvq")
+max_health = 0
+health = 0
+
+[node name="AttackRayCast" type="RayCast2D" parent="." index="5"]
