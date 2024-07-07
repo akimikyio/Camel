@@ -252,7 +252,7 @@ collision_layer = 8
 collision_mask = 10
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AttackArea"]
-polygon = PackedVector2Array(-13, 12, 3, 12, 12, 5, 13, -8, 13, -29, 23, -30, 39, -23, 46, -4, 42, 13, 24, 23, 6, 24, -6, 20)
+polygon = PackedVector2Array(-13, 12, 3, 12, 12, 5, 15, -10, 19, -28, 32, -30, 41, -24, 46, -4, 42, 13, 24, 23, 6, 24, -6, 20)
 disabled = true
 
 [node name="MeleeAttackTimer" type="Timer" parent="."]
