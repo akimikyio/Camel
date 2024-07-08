@@ -13,7 +13,7 @@ config_version=5
 config/name="Camel"
 run/main_scene="res://elements/game/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://558182491e87ab24b809d8ba84064ffa.png"
 
 [autoload]
 
