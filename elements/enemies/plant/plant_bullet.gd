@@ -14,8 +14,8 @@ func _on_timer_timeout():
 	queue_free()
 
 func _on_body_entered(body):
-	if is_alive and "hit" in body:
-		body.hit(damage)
+	if is_alive and "take_damage" in body:
+		body.take_damage(damage)
 	death()
 
 func _on_death_timer_timeout():

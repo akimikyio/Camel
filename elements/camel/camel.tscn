@@ -271,9 +271,5 @@ show_percentage = false
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
-[node name="AudioListener2D" type="AudioListener2D" parent="."]
-position = Vector2(269, -36)
-current = true
-
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
 [connection signal="timeout" from="MeleeAttackTimer" to="." method="_on_melee_attack_timer_timeout"]
