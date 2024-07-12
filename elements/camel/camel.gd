@@ -4,13 +4,13 @@ var can_melee_attack: bool = true
 var melee_damage: int = 10
 
 signal player_death
-
-func init():
+	
+func _init():
 	max_health = 100
 	health = 20
 
 func _ready():
-	init()
+	pass
 
 func _physics_process(delta: float):
 	
