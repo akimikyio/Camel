@@ -7,12 +7,12 @@ class_name Alive
 #@export var max_defence: int
 #@export var defence: int
 
-@onready var max_health: int = 1: 
+@onready var max_health: float = 1.0: 
 	set(value):
 		max_health = value
 		$HealthBar.max_value = max_health
 
-@onready var health: int = 1: 
+@onready var health: float = 1.0: 
 	set(value):
 		health = min(max_health, value)
 		$HealthBar.value = health

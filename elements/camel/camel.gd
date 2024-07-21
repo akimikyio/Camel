@@ -5,11 +5,12 @@ var melee_damage: int = 10
 
 signal player_death
 	
-func _init():
-	max_health = 100
-	health = 20
+func init():
+	max_health = 100.0
+	health = 20.0
 
 func _ready():
+	init()
 	pass
 
 func _physics_process(delta: float):
